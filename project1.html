@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoPro - Muna's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+</head>
+<body>
+    <header class="animate__animated animate__fadeInDown">
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="project-detail" class="animate__animated animate__fadeIn">
+        <div class="project-header">
+            <h2>GeoPro</h2>
+            <p class="project-subtitle">Smart Location-Based Battery Saver for Android</p>
+        </div>
+        <div class="project-detail-container">
+            <div class="video-container">
+                <video controls autoplay muted>
+                    <source src="video/shortvid.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="project-detail-content">
+                <p><strong>Description:</strong></p>
+                <p>GeoPro is an innovative mobile application designed to optimize battery usage by leveraging location-based task automation. By intelligently adjusting device settings based on the user's location, GeoPro ensures that your device runs efficiently, extending battery life and enhancing overall performance. This project aims to contribute to sustainability by reducing the environmental impact of frequent charging.</p>
+
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li><strong>Location-Based Automation:</strong>
+                        <ul>
+                            <li>Automatically adjusts settings like Wi-Fi, Bluetooth, brightness, and volume based on your location.</li>
+                            <li>Uses geofencing to activate or deactivate profiles as you enter or leave designated areas.</li>
+                        </ul>
+                    </li>
+                    <li><strong>User-Friendly Profile Management:</strong>
+                        <ul>
+                            <li>Create, edit, and manage multiple profiles for different locations and scenarios.</li>
+                            <li>Easy-to-use interface for setting up and customizing profiles to suit your needs.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Smart Notifications and Suggestions:</strong>
+                        <ul>
+                            <li>Notifies users to create new profiles based on frequently visited locations.</li>
+                            <li>Suggests optimal settings for new profiles to enhance battery efficiency.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Enhanced Security and Privacy:</strong>
+                        <ul>
+                            <li>Prioritizes user privacy by securely handling location data.</li>
+                            <li>Provides robust authentication and profile protection features.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <p><strong>Technologies Used:</strong></p>
+                <ul>
+                    <li>Android Development (Java/Kotlin)</li>
+                    <li>Firebase Realtime Database and Authentication</li>
+                    <li>Google Maps API and Location Services</li>
+                    <li>Geofencing API</li>
+                </ul>
+
+                <div class="app-screenshots-carousel">
+                    <div class="carousel">
+                        <div><img src="project1/signin.jpg" alt="App Screenshot 1"></div>
+                        <div><img src="project1/signup.jpg" alt="App Screenshot 2"></div>
+                        <div><img src="project1/dashboard.jpg" alt="App Screenshot 3"></div>
+                        <div><img src="project1/battery profiles page.jpg" alt="App Screenshot 4"></div>
+                        <div><img src="project1/create new profile.jpg" alt="App Screenshot 5"></div>
+                        <div><img src="project1/maps.jpg" alt="App Screenshot 6"></div>
+                        <div><img src="project1/profile active.jpg" alt="App Screenshot 7"></div>
+                        <div><img src="project1/profile active 4.jpg" alt="App Screenshot 8"></div>
+                        <div><img src="project1/profile activated.jpg" alt="App Screenshot 9"></div>
+                        <div><img src="project1/belajar dari tingkah laku pengguna.jpg" alt="App Screenshot 10"></div>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/your-repo" class="btn">View on GitHub</a>
+                    <a href="https://your-app-download-url.com" class="btn">Download App</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="animate__animated animate__fadeInUp">
+        <p>&copy; 2024 Muna Nazihah</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                arrows: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+</html>

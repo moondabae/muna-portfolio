@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Culture Quiz: Anime & K-Pop Edition - Muna's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+</head>
+<body>
+    <header class="animate__animated animate__fadeInDown">
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="project-detail" class="animate__animated animate__fadeIn">
+        <div class="project-header">
+            <h2>Pop Culture Quiz: Anime & K-Pop Edition</h2>
+            <p class="project-subtitle">A Fun and Interactive Web Game</p>
+        </div>
+        <div class="project-detail-container">
+            <div class="project-detail-content">
+                <div class="video-container">
+                    <video controls autoplay muted>
+                        <source src="video/project6.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <p><strong>Description:</strong> Pop Culture Quiz: Anime & K-Pop Edition is an engaging and interactive web game designed to test your knowledge of anime and K-Pop culture. Players can answer multiple-choice questions and earn points based on their accuracy and speed. The game features vibrant visuals and dynamic animations to enhance the user experience.</p>
+
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Multiple-choice questions on popular anime and K-Pop topics.</li>
+                    <li>Timer-based scoring system for added challenge.</li>
+                    <li>Responsive design for seamless gameplay on different devices.</li>
+                    <li>Leaderboard to track top scores.</li>
+                </ul>
+
+                <h3>Technologies Used</h3>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                </ul>
+
+                <div class="app-screenshots-carousel">
+                    <div class="carousel">
+                        <div><img src="project6/1.png" alt="Game Screenshot 1"></div>
+                        <div><img src="project6/2.png" alt="Game Screenshot 2"></div>
+                        <div><img src="project6/3.png" alt="Game Screenshot 3"></div>
+                        <div><img src="project6/4.png" alt="Game Screenshot 4"></div>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/moondabae/quiz-master/" class="btn">View on GitHub</a>
+                    <a href="https://moondabae.github.io/quiz-master/" class="btn">Play the Game</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="animate__animated animate__fadeInUp">
+        <p>&copy; 2024 Muna Nazihah</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                arrows: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+</html>

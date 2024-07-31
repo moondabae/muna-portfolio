@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muna's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("Yz28M9azSeV-Vkhee");
+        })();
+    </script>
+</head>
+<body>
+    <header class="animate__animated animate__fadeInDown">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="animate__animated animate__fadeIn">
+        <div class="intro">
+            <img src="images/myphoto.jpg" alt="Muna" class="profile-photo animate__animated animate__zoomIn">
+            <h1 class="animate__animated animate__fadeInUp">Hi, I'm Muna</h1>
+            <p class="animate__animated animate__fadeInUp animate__delay-1s">Welcome to my portfolio website!</p>
+            <a href="#projects" class="btn animate__animated animate__fadeInUp animate__delay-2s">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="animate__animated animate__fadeIn">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <img src="images/about-me.jpg" alt="About Me" class="about-photo">
+            <div class="about-content">
+                <p>Hello! I'm Muna, a passionate web developer and designer with a keen eye for creating visually stunning and highly functional websites. I have a strong background in HTML, CSS, JavaScript, and Java, and I love to explore new technologies and trends in web development. My goal is to build user-friendly, responsive, and accessible websites that provide a seamless user experience.</p>
+                <p>As a 4th year Computer Science student, I have developed a diverse skill set that includes front-end development, back-end development, and UI/UX design. I am always eager to learn and take on new challenges, and I enjoy collaborating with others to bring creative ideas to life.</p>
+                <p>When I'm not coding, you can find me exploring the latest tech innovations, working on personal projects, or enjoying a cup of bubble tea. Let's connect and create something amazing together!</p>
+                <a href="about.html" class="btn learn-more-btn animate__animated animate__fadeInUp animate__delay-2s">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="animate__animated animate__fadeIn">Recent Projects</h2>
+        <div class="projects-container">
+            <div class="project-card animate__animated animate__fadeInUp">
+                <img src="images/1.jpg" alt="Project 1" class="animate__animated animate__zoomIn">
+                <h3 class="animate__animated animate__fadeInUp">GeoPro</h3>
+                <p class="animate__animated animate__fadeInUp animate__delay-1s">Smart Location-Based Battery Saver.</p>
+                <a href="project1.html" class="btn animate__animated animate__fadeInUp animate__delay-2s">View More</a>
+            </div>
+            <div class="project-card animate__animated animate__fadeInUp">
+                <img src="images/2.png" alt="Project 2" class="animate__animated animate__zoomIn">
+                <h3 class="animate__animated animate__fadeInUp">LuxeCouture</h3>
+                <p class="animate__animated animate__fadeInUp animate__delay-1s">Staff and Inventory Management.</p>
+                <a href="project2.html" class="btn animate__animated animate__fadeInUp animate__delay-2s">View More</a>
+            </div>
+            <div class="project-card animate__animated animate__fadeInUp">
+                <img src="images/3.png" alt="Project 3" class="animate__animated animate__zoomIn">
+                <h3 class="animate__animated animate__fadeInUp">Breast Cancer Classification With VGG-16</h3>
+                <p class="animate__animated animate__fadeInUp animate__delay-1s">AI and Machine Learning.</p>
+                <a href="project3.html" class="btn animate__animated animate__fadeInUp animate__delay-2s">View More</a>
+            </div>
+        </div>
+        <a href="projects.html" class="btn view-all-btn">View All Projects</a>
+    </section>
+
+    <section id="skills">
+        <h2 class="animate__animated animate__fadeIn">Skills</h2>
+        <div class="skills-category">
+            <h3>Technical Skills</h3>
+            <div class="skills-container">
+                <div class="skill-card animate__animated animate__fadeInUp">
+                    <h4>HTML & CSS</h4>
+                </div>
+                <div class="skill-card animate__animated animate__fadeInUp">
+                    <h4>JavaScript</h4>
+                </div>
+                <div class="skill-card animate__animated animate__fadeInUp">
+                    <h4>Java</h4>
+                </div>
+                <div class="skill-card animate__animated animate__fadeInUp">
+                    <h4>MySQL</h4>
+                </div>
+                <div class="skill-card animate__animated animate__fadeInUp">
+                    <h4>Python</h4>
+                </div>
+                <div class="skill-card animate__animated animate__fadeInUp">
+                    <h4>Machine Learning</h4>
+                </div>
+            </div>
+        </div>
+        <div class="skills-category">
+            <h3>Soft Skills</h3>
+            <div class="skills-container">
+                <div class="skill-card animate__animated animate__fadeInUp">
+                    <h4>Communication</h4>
+                </div>
+                <div class="skill-card animate__animated animate__fadeInUp">
+                    <h4>Teamwork</h4>
+                </div>
+                <div class="skill-card animate__animated animate__fadeInUp">
+                    <h4>Problem Solving</h4>
+                </div>
+                <div class="skill-card animate__animated animate__fadeInUp">
+                    <h4>Creativity</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="animate__animated animate__fadeIn">Contact</h2>
+        <form class="animate__animated animate__fadeInUp" id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit" class="btn animate__animated animate__fadeInUp">Send</button>
+        </form>
+    </section>
+
+    <footer class="animate__animated animate__fadeInUp">
+        <p>&copy; 2024 Muna Nazihah</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

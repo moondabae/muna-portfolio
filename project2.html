@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeCouture: Staff & Inventory Management - Muna's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+</head>
+<body>
+    <header class="animate__animated animate__fadeInDown">
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="project-detail" class="animate__animated animate__fadeIn">
+        <div class="project-header">
+            <h2>LuxeCouture: Staff & Inventory Management</h2>
+            <p class="project-subtitle">Streamlined Staff and Inventory Management</p>
+        </div>
+        <div class="project-detail-container">
+            <div class="project-detail-content">
+                <div class="video-container">
+                    <video controls autoplay muted>
+                        <source src="video/project2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <p><strong>Description:</strong> LuxeCouture is a comprehensive staff and inventory management system designed to streamline operations in retail environments. It offers a user-friendly interface and powerful features to manage staff details, track inventory, and optimize workflow.</p>
+
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Comprehensive staff management module.</li>
+                    <li>Inventory tracking and management.</li>
+                    <li>Real-time reporting and analytics.</li>
+                    <li>Role-based access control for enhanced security.</li>
+                    <li>Responsive design for accessibility on various devices.</li>
+                </ul>
+
+                <h3>Technologies Used</h3>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>PHP and MySQL</li>
+                    <li>Bootstrap for responsive design</li>
+                    <li>jQuery for interactive features</li>
+                    <li>Chart.js for data visualization</li>
+                </ul>
+
+                <div class="app-screenshots-carousel">
+                    <div class="carousel">
+                        <div><img src="project2/1.png" alt="Dashboard Screenshot"></div>
+                        <div><img src="project2/2.png" alt="Staff Management Screenshot"></div>
+                        <div><img src="project2/3.png" alt="Inventory Management Screenshot"></div>
+                        <div><img src="project2/4.png" alt="Reporting Screenshot"></div>
+                        <div><img src="project2/5.png" alt="Screenshot 4"></div>
+                        <div><img src="project2/6.png" alt="Screenshot 6"></div>
+                        <div><img src="project2/7.png" alt="Screenshot 7"></div>
+                        <div><img src="project2/8.png" alt="Screenshot 8"></div>
+                        <div><img src="project2/9.png" alt="Screenshot 9"></div>
+                        <div><img src="project2/10.png" alt="Screenshot 10"></div>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/moondabae/luxecouture/" class="btn">View on GitHub</a>
+                    <a href="https://moondabae.github.io/luxecouture/" class="btn">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="animate__animated animate__fadeInUp">
+        <p>&copy; 2024 Muna Nazihah</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                arrows: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+</html>
