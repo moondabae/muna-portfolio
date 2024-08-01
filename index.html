@@ -17,13 +17,21 @@
 <body>
     <header class="animate__animated animate__fadeInDown">
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="nav-container">
+                <div class="logo">Muna Asman</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -76,8 +84,11 @@
 
     <section id="skills">
         <h2 class="animate__animated animate__fadeIn">Skills</h2>
-        <div class="skills-category">
-            <h3>Technical Skills</h3>
+        <div class="skills-tabs">
+            <button class="tablink active" onclick="openTab(event, 'technical')">Technical Skills</button>
+            <button class="tablink" onclick="openTab(event, 'soft')">Soft Skills</button>
+        </div>
+        <div id="technical" class="tabcontent">
             <div class="skills-container">
                 <div class="skill-card animate__animated animate__fadeInUp">
                     <h4>HTML & CSS</h4>
@@ -99,8 +110,7 @@
                 </div>
             </div>
         </div>
-        <div class="skills-category">
-            <h3>Soft Skills</h3>
+        <div id="soft" class="tabcontent" style="display:none;">
             <div class="skills-container">
                 <div class="skill-card animate__animated animate__fadeInUp">
                     <h4>Communication</h4>
@@ -113,6 +123,9 @@
                 </div>
                 <div class="skill-card animate__animated animate__fadeInUp">
                     <h4>Creativity</h4>
+                </div>
+                <div class="skill-card animate__animated animate__fadeInUp">
+                    <h4>Adaptability</h4>
                 </div>
             </div>
         </div>
