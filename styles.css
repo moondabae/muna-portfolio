@@ -483,6 +483,7 @@ footer {
     max-width: 1000px;
     margin: 0 auto;
     text-align: justify;
+    padding: 1em; /* Ensure there is some padding on mobile devices */
 }
 
 .project-header {
@@ -535,11 +536,12 @@ footer {
 .carousel .slick-slide {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .carousel img {
-    width: 100%;
     max-width: 200px;
+    max-height: 200px; /* Added to ensure images do not exceed a certain height */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
@@ -569,6 +571,54 @@ footer {
     background-color: #2EA043;
     transform: scale(1.05);
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .project-header h2 {
+        font-size: 2em;
+    }
+
+    .project-header .project-subtitle {
+        font-size: 1em;
+    }
+
+    .video-container {
+        max-width: 100%;
+    }
+
+    .project-detail-content {
+        max-width: 100%;
+    }
+
+    .carousel img {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-header h2 {
+        font-size: 1.5em;
+    }
+
+    .project-header .project-subtitle {
+        font-size: 0.9em;
+    }
+
+    .project-links .btn {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    .project-links .btn:first-child {
+        margin-right: 0;
+    }
+
+    .carousel img {
+        max-width: 100px;
+    }
+}
+
+
 
 /* About Page Styles */
 .about-full-container {
